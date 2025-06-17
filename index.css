@@ -1,0 +1,236 @@
+body {
+    background-color:#141414;
+}
+h1{
+    color: #f3e5d6;
+    font-size: 15px;
+}
+#top {
+    width: 100%px;  
+    height: 130px;
+    background-color: #1d1d1d;
+    box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+-webkit-box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+-moz-box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+}
+.chessg img {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 90px;
+}
+.username{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+    cursor: pointer;
+}
+.logout-button a {
+    position: absolute;
+    top: 40px;
+    left: 1810px;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+}
+.logout-button a:hover {
+    color: #f3e5d6 !important; /* Цвет при наведении */
+}
+
+.logout-button a:active {
+    color: #f3e5d6 !important; /* Цвет при нажатии */
+}
+
+.logout-button a:visited {
+    color: #f3e5d6 !important; /* Цвет после посещения */
+}
+.section-main{
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 75px;
+    top: 34%;
+    left: 76%;
+}
+.section-box{
+    background-color:#f3e5d6;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    -webkit-box-shadow: -1px 29px 100px -22px rgba(0, 0, 0, 1);
+-moz-box-shadow: -1px 29px 100px -22px rgba(0, 0, 0, 1);
+box-shadow: -1px 29px 100px -22px rgba(0, 0, 0, 1);
+}
+.section-box:hover {
+    box-shadow: 0 0 15px rgba(243, 229, 214, 0.308); /* Эффект свечения */
+}
+.section-main h1 {
+    color: black;
+}
+.chessBoard-body{
+display:flex;
+position: absolute;
+align-items: center;
+justify-content: center;
+height: 100vh;
+top: 5%;
+  left: 40%;
+  
+}
+.chessBoard{
+    width:80vw;
+    height: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+-moz-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+}
+.square{
+    width:12.5%;
+    height:12.5%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.white{
+    background-color:#f3e5d6;
+}
+.black{
+    background-color:#b58863;
+}
+.coordinate{
+    height: auto;
+    display: flex;
+    bottom: 4%;
+    left:4%;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+}
+.rank{
+    top:4%;
+    right: 4%;
+    left:auto;
+}
+.whiteText{
+    color:#f3e5d6;
+}
+.blackText{
+    color:#b58863;
+}
+.piece{
+    width: 100%;
+    z-index: 1;
+}
+.piece img{
+    width:100%;
+    height: auto;
+}
+@media (min-width:600px){
+    .chessBoard{
+        width:600px;
+        height:600px;
+    }
+}
+.rating-table {
+    width: 100%;
+    border-collapse: collapse;
+    position:absolute;
+    right: 116%;
+    top:18%;
+    -webkit-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+-moz-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+  }
+  
+  .rating-table th, .rating-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  .rating-table thead {
+    background-color: #7a5b41;
+    color: #f3e5d6;
+  }
+  .rating-table tbody tr:nth-child(odd) {
+    background-color: #ded1c3;
+  }
+  .rating-table tbody tr:nth-child(even) {
+    background-color: #f3e5d6;
+  }
+  .button-reting {
+    background-color: #f3e5d6;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    -webkit-box-shadow: -1px 29px 100px -22px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 29px 100px -22px rgba(0, 0, 0, 1);
+    box-shadow: -1px 29px 100px -22px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 70%;
+    right: 140%;
+    width: 300px;
+}
+.button-reting:hover {
+    box-shadow: 0 0 15px rgba(243, 229, 214, 0.308); /* Эффект свечения */
+}
+.button-reting h1{
+    color:black;
+}
+.logout-button a:active {
+    text-decoration: none;
+}
+
+.logout-button a:visited {
+    text-decoration: none;
+}
+.header{
+    width: 330%;  
+    height: 110px;
+    background-color: #1d1d1d;
+    position:absolute;
+    top:90%;
+    left:-140%;
+}
+.header-text {
+    position: absolute;
+    top: 50%; /* Центрируем по вертикали */
+    left: 52%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Корректируем для точного центрирования */
+    font-size: 15px;
+    color: #e9dcce;
+    cursor: pointer;
+    word-spacing: 15px; /* Отступ между словами */
+}
+.header-text2 {
+    position: absolute;
+    top: 75%; /* Центрируем по вертикали */
+    left: 52%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Корректируем для точного центрирования */
+    font-size: 12px;
+    color: rgb(205, 193, 180);
+    cursor: pointer;
+    word-spacing: 15px; /* Отступ между словами */
+}

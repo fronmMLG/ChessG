@@ -1,0 +1,205 @@
+body {
+    background-color:#141414;
+}
+h1{
+    color: #f3e5d6;
+    font-size: 15px;
+}
+#top {
+    width: 100%px;  
+    height: 130px;
+    background-color: #1d1d1d;
+    box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+-webkit-box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+-moz-box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+}
+.chessg img {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 90px;
+}
+.username{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+    cursor: pointer;
+}
+.logout-button a {
+    position: absolute;
+    top: 40px;
+    left: 1810px;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+}
+.logout-button a:hover {
+    color: #f3e5d6 !important; /* Цвет при наведении */
+}
+
+.logout-button a:active {
+    color: #f3e5d6 !important; /* Цвет при нажатии */
+}
+
+.logout-button a:visited {
+    color: #f3e5d6 !important; /* Цвет после посещения */
+}
+.username2{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+}
+.profile { 
+    color: #f3e5d6; 
+    text-align: center; 
+}
+.bullet-icon{
+    gap: 15px;
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    padding-bottom: 40px;
+}
+.bullet-icon img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    transform: translateY(-4px); /* Смещение вверх */
+}
+.rapid-icon{
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    gap: 15px;
+}
+.rapid-icon img{
+    width: 47px;
+    height: 47px;
+    vertical-align: middle;
+}
+.blitz-icon{
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    gap: 15px;
+}
+.blitz-icon img{
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    transform: translateY(-4px); /* Смещение вверх */
+}
+.tasks-icon{
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    gap: 15px;
+}
+.tasks-icon img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    transform: translateY(-4px); /* Смещение вверх */
+}
+.allgames-icon{
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    gap: 25px;
+    flex-direction: row;
+}
+.allgames-icon img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    transform: translateY(-4px); /* Смещение вверх */
+    margin: 0;
+}
+
+.card {
+    position: absolute;
+    width: 1000px;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 24px;
+    line-height: 1.4;
+    border: 1px solid #999999;
+    top:25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .content {
+    display: flex;
+    gap: 25px;
+    color:#f0d9b5;
+    justify-content: space-between; /* Разделяем на левый и правый блок */
+  }
+.lichess-nick{
+    font-size: 26px;
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    text-align: center; /* Для текста внутри, если нужно */
+    display: flex; /* Для использования flexbox */
+    padding:20px;
+    padding-bottom: 40px;
+}
+.left {
+    width: 65%;
+    display: flex;
+  flex-direction: column;
+  gap: 15px;
+  }
+  
+  .right {
+ display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  }
+  
+  .lichess-nick, .blitz-icon, .rapid-icon, .bullet-icon, .tasks-icon, .allgames-icon {
+    margin-bottom: 10px; /* Добавляем отступы между элементами */
+  }
+  
+  .right p {
+    text-align: right; /* Выравнивание текста по правому краю */
+    padding-bottom: 20px;
+  }
+  
+  .lichess-nick, .blitz-icon, .rapid-icon, .bullet-icon, .tasks-icon, .allgames-icon {
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+  }
+  
+  .lichess-nick p, .blitz-icon p, .rapid-icon p, .bullet-icon p, .tasks-icon p, .allgames-icon p {
+    margin: 0; /* Убираем лишние отступы у абзацев */
+  }
+  
+  .lichess-nick strong, .blitz-icon strong, .rapid-icon strong, .bullet-icon strong, .tasks-icon strong, .allgames-icon strong {
+    margin-left: 10px; /* Добавляем отступ между изображениями и текстом */
+  }
+.was-online-text{
+padding-bottom: 100px;
+  }
+
+  .unlink-button {
+    position: absolute;
+    background-color: red;
+    color:#f3e5d6;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    top:80%;
+    transform: translateX(-50%);
+}
+
+.unlink-button:hover {
+    background-color: darkred;
+}

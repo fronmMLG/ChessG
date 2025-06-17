@@ -1,0 +1,373 @@
+
+body {
+    background-color:#141414;
+}
+h1{
+    color: #f3e5d6;
+    font-size: 15px;
+}
+#top {
+    width: 100%px;  
+    height: 130px;
+    background-color: #1d1d1d;
+    box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+-webkit-box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+-moz-box-shadow: 2px 8px 94px 10px rgba(0,0,0,0.72);
+}
+.chessg img {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 90px;
+}
+.username{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+    cursor:pointer;
+}
+.logout-button a {
+    position: absolute;
+    top: 40px;
+    left: 1810px;
+    transform: translateX(-50%);
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 30px;
+}
+.logout-button a:hover {
+    color: #f3e5d6 !important; /* Цвет при наведении */
+}
+
+.logout-button a:active {
+    color: #f3e5d6 !important; /* Цвет при нажатии */
+}
+
+.logout-button a:visited {
+    color: #f3e5d6 !important; /* Цвет после посещения */
+}
+.chessBoard {
+width:80vw;
+height: 80vw;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 52%;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+-moz-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+}
+.square {
+width:12.5%;
+height: 12.5%;
+float: left;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.white {
+background-color: #f0d9b5;
+}
+.black {
+background-color: #b58863;
+}
+.coordinate {
+height:auto;
+display:flex;
+bottom: 4%;
+left:4%;
+position: absolute;
+font-size: 12px;
+font-weight: bold;
+}
+.rank {
+top:4%;
+right:4%;
+left:auto;
+}
+.whiteText {
+color:#f0d9b5;
+}
+.blackText {
+color:#b58863;
+}
+.piece {
+width:100%;
+z-index: 1;
+cursor: pointer;
+}
+.piece img {
+max-width: 100%;
+width:100%;
+height: auto;
+}
+#alert {
+position: absolute;
+color: whitesmoke;
+width: 50vw;
+height: 12%;
+text-align: center;
+align-content: center;
+justify-content: center;
+font-size: 35px;
+font-weight: bold;
+z-index: 1000;
+display: none; 
+background: #008080bf;
+border-radius: 5px;
+align-items: center;
+}
+
+.promotionOption{
+border-radius: 50%;
+background-color: darkgray;
+transition: transform 0.2s;
+position: absolute;
+z-index: 1000;
+}
+.promotionOption:hover {
+cursor: pointer;
+border-radius: 0%;
+background-color:#539B0C;
+width: 100%;
+}
+.promotionOption img {
+max-width: 100%;
+width: 100%;
+height: auto;
+}
+.container{
+display: flex;
+flex-wrap: wrap-reverse;
+align-items: center;
+width: 90%;
+}
+.buttonContainer{
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 8vw;
+border: 1px solid #999999;
+border-radius: 24px;
+padding: 20px;
+top:64%;
+left:69%;
+}
+.buttonContainer button {
+width: 120px;
+height: 40px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+background-color:#f3e5d6;
+color: black;
+font-weight: bold;
+margin: 10px;
+}
+.buttonContainer select {
+width: 120px;
+height: 40px;
+background-color: whitesmoke;
+}
+@media (min-width:600px) {
+.chessBoard {
+    width:600px;
+    height: 600px;
+}
+#alert {
+  width:450px;
+  height: 80px;
+}
+}
+@media (max-width:600px) {
+.coordinate {
+  font-size: 8px;
+}
+#alert {
+  font-size: 20px;
+}
+button {
+  font-size: 10px;
+}
+.buttonContainer {
+  flex-direction: row;
+  align-items: last baseline;
+  justify-content: center;
+  width: 80vw;
+}
+.buttonContainer button, .buttonContainer select {
+  width: 20vw;
+  margin-right: 5px;
+}
+}
+
+.fen {
+color: #f0d9b5;
+font-weight: bold;
+}
+
+#consoleOutput {
+color: #f0d9b5;
+font-family: monospace; /* Моноширинный шрифт для консольного вывода */
+white-space: nowrap; /* Отключает перенос текста на новую строку */
+display: inline-block; /* Устанавливает вывод в одну строку */
+font-size: 16px;
+
+}
+.fen-background{
+position: absolute;
+padding: 10px;
+background-color: #2f2f2f;
+border-radius: 10px;
+-webkit-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+-moz-box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+box-shadow: 5px 7px 65px -26px rgba(0, 0, 0, 1);
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+span{
+color:#f0d9b5eb;
+}
+h3{
+  font-size: 20px;
+  margin-left: 30px;
+}
+#pgnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow-y: auto;
+  font-size: 14px;
+  color:rgb(94,92,92);
+  height: 100%;
+  margin-bottom: 15px;
+}
+
+.moveNumber {
+display: flex;
+flex: 0 0 16.666%;
+background-color: #363636;
+justify-content: center;
+align-items: center;
+height: 20px;
+color:#f3e5d6;
+}
+.playerMove {
+display: flex;
+flex: 0 0 35%;
+padding-left: 10px;
+align-items: center;
+height: 20px;
+cursor: pointer;
+}
+
+.highlighted{
+background-color:#292929;
+}
+#moveNavigation{
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
+background-color: #1d1d1d;
+height: 10vh;
+}
+
+#gamePlayerInfo {
+display: flex;
+background-image: linear-gradient(to left bottom, #191919, #181818, #171717, #151515, #141414);
+border-radius: 5px;
+flex-direction: column;
+width: 25vw;
+height: 32vh;
+padding-top: 5px;
+padding-bottom: 5px;
+box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.2);
+position: absolute;
+top: 42%;
+left: 80%;
+transform: translate(-50%, -50%);
+border: 1px solid #484848c8;
+}
+#gamePlayerInfo img{
+  width: 17px;
+  height: 17px;
+}
+.player {
+display: flex;
+align-items: center;
+color:#f3e5d6;
+font-size: 20px;
+
+}
+#player1,#player2 {
+margin: 10px;
+}
+
+.navigation{
+display: flex;
+width: 25%;
+height: 100%;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.navigation:hover{
+  background-color: #292929;
+}
+    .card {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      padding: 20px;
+      padding-top: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      line-height: 1.4;
+      border: 1px solid #999999;
+      right:68%;
+      top:24%;
+    }
+  .card img{
+    float: left; /* Это заставит текст обтекать изображение слева */
+  margin-right: 20px;
+  margin-bottom: 20px;
+    height: 170px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+    .content {
+      
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      color:#f0d9b5;
+    }
+    .content .heading {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.3;
+      z-index: 1;
+    }
+    .content .para {
+      z-index: 1;
+      font-size: 18px;
+    }

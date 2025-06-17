@@ -1,0 +1,90 @@
+#text{
+    height: 25px;
+    border-radius: 5px;
+    padding: 4px;
+    border: solid thin #f3e5d6;
+    width: 100%;
+}
+.click-text a {
+    color: #f3e5d6 !important; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+.click-text a:hover {
+    color: #f3e5d6 !important; /* Цвет при наведении */
+}
+
+.click-text a:active {
+    color: #f3e5d6 !important; /* Цвет при нажатии */
+}
+
+.click-text a:visited {
+    color: #f3e5d6 !important; /* Цвет после посещения */
+}
+#button{
+    display: block;
+    padding: 10px;
+    width: 100px;
+    color: Black;
+    background-color: #f3e5d6;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto; 
+    transition: box-shadow 0.3s ease-in-out;
+}
+#button:hover {
+    box-shadow: 0 0 15px rgba(243, 229, 214, 0.8); /* Эффект свечения */
+}
+#box{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
+.chessgif img {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+}
+body {
+    background-color:#141414;
+}
+.fullscreen-bg{
+    width: 22vw; /* Полная ширина окна */
+    height: 65vh; /* Полная высота окна */
+    background-image: linear-gradient(to right, #2a2a2a, #272727, #232323, #202020, #1d1d1d);
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.chessg img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 90px;
+}
+#login-text {
+    font-size: 37px; 
+    color: #f3e5d6;
+    font-weight: bold;
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#login-text2 {
+    font-size: 17px; 
+    color: #f3e5d6;
+    position: absolute;
+    top: 440px;
+    left: 837px;
+    transform: translate(-50%, -50%);
+}

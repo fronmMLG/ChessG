@@ -1,0 +1,71 @@
+
+.buttun-link {
+    position: absolute;
+    background-color: #f3e5d6;
+    color: Black;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    left:50%;
+    top:-130%;
+    transform: translateX(-50%);
+}
+
+.buttun-link:hover {
+    background-color: #cdc1b5;
+    box-shadow: 0 0 15px rgba(243, 229, 214, 0.8); /* Эффект свечения */
+}
+#box{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
+.fullscreen-bg{
+    width: 22vw; /* Полная ширина окна */
+    height: 25vh; /* Полная высота окна */
+    background-image: linear-gradient(to right, #2a2a2a, #272727, #232323, #202020, #1d1d1d);
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+label{
+    position: absolute;
+    top: -482%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f3e5d6;
+    font-size: 23px;
+    white-space: nowrap;
+}
+input{
+    position: absolute;
+    top: -242%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.message-box {
+    text-align: center; /* Центрирование */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
